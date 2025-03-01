@@ -1,8 +1,9 @@
 '''
-This is a pydantic model/schema file made to parse inputs from the frontend so that only the inputs I want to send are sent
+This is a pydantic model/schema file
+made to parse inputs from the frontend
+so that only the inputs I want to send are sent
 
 '''
-
 
 
 from pydantic import BaseModel
@@ -18,6 +19,7 @@ class UserCreate(BaseModel):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     paid_dues: Optional[bool] = False
+
 
 class UserUpdate(BaseModel):
     username: Optional[str] = None
