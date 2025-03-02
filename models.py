@@ -17,7 +17,7 @@ class User(Base):
     user_id = Column(Integer, primary_key=True, autoincrement=True)
     username = Column(String(30), nullable=False, unique=True)
     password = Column(String(30), nullable=False)
-    email = Column(String(255))
+    email = Column(String(255), unique=True)
     first_name = Column(String(30))
     last_name = Column(String(30))
     signup_date = Column(TIMESTAMP, default=func.now())

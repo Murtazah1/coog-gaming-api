@@ -8,3 +8,5 @@ __pycache__/
 # ignore the api.log
 api.log
 
+# ignore  .env
+*.env
